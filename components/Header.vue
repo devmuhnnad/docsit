@@ -13,6 +13,9 @@ watch(() => useColorMode().preference, (newVal) => {
         iconName.value = "mdi:white-balance-sunny"
         iconClass.value = "text-gray-900"
     }
+}, {
+    immediate: true
+
 })
 
 </script>
