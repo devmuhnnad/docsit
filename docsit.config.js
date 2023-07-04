@@ -1,5 +1,5 @@
 /* 
-  This is the configuration file for Docsit.
+  This is the configuration file for DocsIt.
 */
 
 /** @type {import('.docsit/types/config').Config} */
@@ -29,7 +29,7 @@ const config = {
       title: "Flutter Bond",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "/img/logo.svg",
       },
       items: [
         {

@@ -1,27 +1,41 @@
 
+<script setup>
+
+const config = useConfig()
+const iconName = useState("mdi:white-balance-sunny")
+const iconClass = useState("text-gray-900")
+
+watch(() => useColorMode().preference, (newVal) => {
+    if (newVal == "dark") {
+        iconName.value = "ph:moon-fill"
+        iconClass.value = "text-gray-100"
+    } else {
+        iconName.value = "mdi:white-balance-sunny"
+        iconClass.value = "text-gray-900"
+    }
+})
+
+</script>
+
 <template>
     <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-                    viewBox="0 0 24 24">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
-                <span class="ml-3 text-xl text-primary">Tailblocks</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-gray-900">First Link</a>
-                <a class="mr-5 hover:text-gray-900">Second Link</a>
-                <a class="mr-5 hover:text-gray-900">Third Link</a>
-                <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+        <div class="w-full flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <NuxtLink to="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ">
+                <nuxt-img :src="config.themeConfig.navbar.logo.src" :alt="config.themeConfig.navbar.logo.alt"
+                    class="w-10 h-10 rounded-full" />
+                <span
+                    class="ml-3 text-xl text-gray-900 dark:text-gray-100 hover:text-light-primary dark:hover:text-dark-primary">{{
+                        config.title }}</span>
+            </NuxtLink>
+            <nav class="md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <NuxtLink to="/docs"
+                    class="ml-5 text-gray-900 dark:text-gray-100 hover:text-light-primary dark:hover:text-dark-primary font-bold">
+                    Tutorial</NuxtLink>
+
             </nav>
-            <button
-                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
+            <button @click="toggleTheme()" class="text-xl">
+                <Icon :name="iconName" :class="iconClass" size="1.5em" />
+
             </button>
         </div>
     </header>
