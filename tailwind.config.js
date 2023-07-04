@@ -1,23 +1,3 @@
-/*   --ifm-color-primary: #4845b3;
-  --ifm-color-primary-dark: #282661;
-  --ifm-color-primary-darker: #282661;
-  --ifm-color-primary-darkest: #131230;
-  --ifm-color-primary-light: #4643ac;
-  --ifm-color-primary-lighter: #5450c4;
-  --ifm-color-primary-lightest: #6965f3; 
-  
-  Dark:
-
-    --ifm-color-primary: #6965f3;
-  --ifm-color-primary-dark: #5e5adb;
-  --ifm-color-primary-darker: #4a46c0;
-  --ifm-color-primary-darkest: #3c38b8;
-  --ifm-color-primary-light: #7975ff;
-  --ifm-color-primary-lighter: #837eff;
-  --ifm-color-primary-lightest: #9894ff;
-  
-  */
-
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class",
