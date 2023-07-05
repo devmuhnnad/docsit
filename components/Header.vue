@@ -2,17 +2,12 @@
 <script setup>
 
 const config = useConfig()
-const iconName = useState()
 
 const menuOpen = ref(false)
 
 const toggleMenu = () => {
     menuOpen.value = !menuOpen.value
 }
-
-
-
-
 
 </script>
 
@@ -33,7 +28,7 @@ const toggleMenu = () => {
                         config.title }}</span>
             </NuxtLink>
             <nav class="md:flex hidden flex-wrap items-center text-base justify-center" aria-label="Desktop navigation">
-                <NuxtLink to="/docs"
+                <NuxtLink to="/docs/intro"
                     class="ml-5 text-gray-900 dark:text-gray-100 hover:text-light-primary dark:hover:text-dark-primary font-bold">
                     Tutorial</NuxtLink>
 
@@ -59,7 +54,7 @@ const toggleMenu = () => {
                     </button>
                 </div>
                 <div class="py-3">
-                    <NuxtLink to="/docs"
+                    <NuxtLink to="/docs/intro"
                         class="ml-5 text-gray-900 dark:text-gray-100 hover:text-light-primary dark:hover:text-dark-primary font-bold">
                         Tutorial</NuxtLink>
                 </div>
