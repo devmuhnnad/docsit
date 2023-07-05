@@ -12,6 +12,18 @@ if (data._value == null) {
 
     })
 }
+
+
+useHead({
+    title: data.value.title,
+    meta: [
+        {
+            name: "description",
+            content: data.value.description,
+        },
+    ],
+})
+
 </script>
 
 <template>

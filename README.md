@@ -1,6 +1,6 @@
 <img style="margin: 0 auto;" src="https://i.ibb.co/Yt6VsT4/docsit.png" alt="Docusaurus">
 <p align="center" style="margin-top: 1rem;">
-  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/slorber/docusaurus-starter"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/devmuhnnad/docsit"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 </p>
 </br>
 Building a documentation website has never been easier!
