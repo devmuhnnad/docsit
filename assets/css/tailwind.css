@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 * {
-  @apply transition-all duration-300;
+  transition: background-color 500ms, transform 500ms;
 }

@@ -18,10 +18,5 @@
     "nuxt": "^3.6.1",
     "nuxt-icon": "^0.4.2"
   },
-  "dependencies": {
-    "frontmatter-markdown-loader": "^3.7.0",
-    "highlight.js": "^11.8.0",
-    "markdown-it": "^13.0.1",
-    "markdown-it-container": "^3.0.0"
-  }
+  "dependencies": {}
 }
