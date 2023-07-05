@@ -1,63 +1,22 @@
-# Nuxt 3 Minimal Starter
+<img style="margin: 0 auto;" src="https://i.ibb.co/Yt6VsT4/docsit.png" alt="Docusaurus">
+<p align="center" style="margin-top: 1rem;">
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/slorber/docusaurus-starter"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+</p>
+</br>
+Building a documentation website has never been easier!
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## What is DocsIt?
 
-## Setup
+DocsIt is a tool or a template built on NuxtJS that helps you build a documentation website for your project. It is designed to be simple and easy to use. You can use it to build your own documentation website in minutes.
 
-Make sure to install the dependencies:
+# Installation
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Use clone command to get the template
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
+git clone https://github.com/devmuhnnad/docsit.git
 ```
 
-## Production
+## Contributing
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+We've released DocsIt because it helps and encourages building informative Documentation for open-source projects, We hope that other organizations can benefit from the project. We are thankful for any contributions from the community.
