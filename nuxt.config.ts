@@ -27,4 +27,10 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["composables"],
   },
+
+  routeRules: {
+    "/docs": {
+      redirect: "/docs/intro",
+    },
+  },
 });

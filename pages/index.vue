@@ -1,14 +1,24 @@
 <script setup>
 
-
-
 const config = useConfig();
+
+
+useHead({
+    title: config.title,
+    meta: [
+        {
+            name: 'description',
+            content: config.tagline
+        }
+    ]
+})
 </script>
 
 <template>
     <!-- Hero Section -->
-    <div class="flex flex-col gap-5 justify-center items-center bg-light-primary dark:bg-dark-primary py-20 text-center px-5">
-        <nuxt-img :src="config.themeConfig.navbar.logo.src" :alt="config.themeConfig.navbar.logo.alt"
+    <div
+        class="flex flex-col gap-5 justify-center items-center bg-light-primary dark:bg-dark-primary py-20 text-center px-5">
+        <nuxt-img :src="config.theme.navbar.logo.src" :alt="config.theme.navbar.logo.alt"
             class="rounded-full bg-white dark:bg-gray-900 p-5 h-[200px] w-[200px]" />
 
         <h1 class="text-4xl font-bold text-white dark:text-gray-900">{{ config.title }}</h1>
@@ -17,7 +27,7 @@ const config = useConfig();
         </p>
 
 
-        <NuxtLink to="/docs" class="bg-white hover:bg-gray-200 text-gray-900 py-2 px-6 text-lg font-bold rounded-md">
+        <NuxtLink to="/docs/intro" class="bg-white hover:bg-gray-200 text-gray-900 py-2 px-6 text-lg font-bold rounded-md">
             Get Started
         </NuxtLink>
     </div>

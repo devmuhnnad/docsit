@@ -4,7 +4,7 @@ const config = useConfig();
 <template>
     <div class="py-6 bg-gray-700 ">
         <p class="text-center text-white text-base">
-            {{ config.themeConfig.footer.copyright }}
+            {{ config.theme.footer.copyright }}
         </p>
     </div>
 </template>
