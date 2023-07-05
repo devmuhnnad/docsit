@@ -12,7 +12,9 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
   },
-
+  content: {
+    sources: ["docs"],
+  },
   image: {},
 
   tailwindcss: {

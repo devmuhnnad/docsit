@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        /* Light Theme */
         light: {
           primary: {
             DEFAULT: "#4845b3",
@@ -20,6 +21,7 @@ export default {
             lightest: "#6965f3",
           },
         },
+        /* Dark Theme */
         dark: {
           primary: {
             DEFAULT: "#6965f3",

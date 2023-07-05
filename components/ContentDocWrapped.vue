@@ -4,7 +4,6 @@ const props = defineProps(['path'])
 
 const { data } = await useAsyncData(props.path, () => queryContent(props.path).findOne())
 
-console.log(data)
 
 if (data._value == null) {
     throw createError({
