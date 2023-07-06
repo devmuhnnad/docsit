@@ -38,9 +38,8 @@ onMounted(() => {
 <template>
     <!-- Hero Section -->
     <div ref="heroComponent" :style="`opacity: ${heroOpacity}`"
-        class="flex flex-col gap-5 justify-center items-center bg-light-primary dark:bg-dark-primary py-20 text-center px-5 mt-20">
-        <nuxt-img :src="config.theme.navbar.logo.src" :alt="config.theme.navbar.logo.alt"
-            class="rounded-full bg-white dark:bg-gray-900 p-5 h-[200px] w-[200px]" />
+        class="flex flex-col gap-5 justify-center items-center bg-light-primary dark:bg-dark-primary py-20 text-center px-5">
+        <nuxt-img :src="config.logo.src" :alt="config.logo.alt" />
 
         <h1 class="text-4xl font-bold text-white dark:text-gray-900">{{ config.title }}</h1>
         <p class="text-2xl text-white dark:text-gray-900">

@@ -33,7 +33,7 @@ watchEffect(() => {
 </script>
 
 <template>
-    <header class="text-gray-600 body-font fixed dark:bg-gray-900 bg-white w-full top-0 z-10">
+    <header class="text-gray-600 body-font sticky dark:bg-gray-900 bg-white w-full top-0 z-10">
         <div class="w-full flex flex-wrap p-5 flex-row items-center gap-5">
 
             <div class="md:hidden">
@@ -42,8 +42,8 @@ watchEffect(() => {
             </div>
 
             <NuxtLink to="/" class="flex title-font font-medium items-center text-gray-900 ">
-                <nuxt-img :src="config.theme.navbar.logo.src" :alt="config.theme.navbar.logo.alt"
-                    class="w-10 h-10 rounded-full" />
+                <nuxt-img v-if="config.theme.navbar.logo?.src" :src="config.theme.navbar.logo.src"
+                    :alt="config.theme.navbar.logo.alt" class="w-10 h-10 rounded-full object-contain" />
                 <span
                     class="ml-3 text-xl text-gray-900 dark:text-gray-100 hover:text-light-primary dark:hover:text-dark-primary">{{
                         config.theme.navbar.title }}</span>
@@ -61,8 +61,8 @@ watchEffect(() => {
 
                 <div class="flex justify-start items-center gap-5 border-b pb-2 z-10">
                     <NuxtLink to="/" class="flex title-font font-medium items-center text-gray-900">
-                        <nuxt-img :src="config.theme.navbar.logo.src" :alt="config.theme.navbar.logo.alt"
-                            class="w-10 h-10 rounded-full" />
+                        <nuxt-img v-if="config.theme.navbar.logo?.src" :src="config.theme.navbar.logo.src"
+                            :alt="config.theme.navbar.logo.alt" class="w-10 h-10 rounded-full" />
                         <span
                             class="ml-3 text-xl text-gray-900 dark:text-gray-100 hover:text-light-primary dark:hover:text-dark-primary">{{
                                 config.title }}</span>

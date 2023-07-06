@@ -12,25 +12,25 @@ export default {
         /* Light Theme */
         light: {
           primary: {
-            DEFAULT: "#4845b3",
-            dark: "#282661",
-            darker: "#282661",
-            darkest: "#131230",
-            light: "#4643ac",
-            lighter: "#5450c4",
+            DEFAULT: "#00ACAC",
+            dark: "#00ACAC",
+            darker: "#008F8F",
+            darkest: "#007070",
+            light: "#00ACAC",
+            lighter: "#00DCDC",
             lightest: "#6965f3",
           },
         },
         /* Dark Theme */
         dark: {
           primary: {
-            DEFAULT: "#6965f3",
-            dark: "#5e5adb",
-            darker: "#4a46c0",
-            darkest: "#3c38b8",
-            light: "#7975ff",
-            lighter: "#837eff",
-            lightest: "#9894ff",
+            DEFAULT: "#00e1e1",
+            dark: "#00ACAC",
+            darker: "#008F8F",
+            darkest: "#007070",
+            light: "#00FFFF",
+            lighter: "#00ECEC",
+            lightest: "#00DCDC",
           },
         },
       },

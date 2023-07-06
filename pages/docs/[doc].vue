@@ -7,7 +7,7 @@ const { doc } = useRoute().params;
 
 const currentPath = `/${doc}`;
 
-const activeClass = "text-light-primary-light dark:text-dark-primary-light bg-gray-200 dark:bg-gray-800"
+const activeClass = "!text-light-primary-light !dark:text-dark-primary-light bg-gray-200 dark:bg-gray-800"
 
 
 

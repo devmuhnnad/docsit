@@ -21,6 +21,20 @@ export type Config = {
   favicon: string;
 
   /**
+   * Logo in hero section
+   */
+  logo: {
+    /**
+     * The src of the logo
+     */
+    src: string;
+    /**
+     * The alt of the logo
+     */
+    alt: string;
+  };
+
+  /**
    * Theme configuration
    */
   theme: {
@@ -36,7 +50,7 @@ export type Config = {
       /**
        * The logo on the navbar
        */
-      logo: {
+      logo?: {
         /**
          * The src of the logo
          */

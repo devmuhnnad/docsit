@@ -27,9 +27,8 @@ useHead({
                 Easy to Use
             </h2>
 
-            <p>Flutter Bond is designed from the ground up to be easily installed and used to get your Flutter app up and
-                running quickly.
-            </p>
+            <p>DocsIt is designed to be easy to use, with a lot of features to help you build your documentation.</p>
+
         </div>
         <div class="text-center flex flex-col gap-4 dark:text-white text-gray-900 flex-1">
             <nuxt-img src="/img/clean-arcitecture.svg" alt="clean-arcitecture" class="w-[200px] mx-auto" />
@@ -39,8 +38,8 @@ useHead({
             </h2>
 
             <p>
-                Build your app with clean architecture in mind. Flutter bond will help you build scalable and maintainable
-                apps, with a lot of time saved.
+                DocsIt is built with clean architecture in mind, so you can easily extend it to fit your needs, as it also
+                built on top of NuxtJs and TailwindCss.
             </p>
         </div>
         <div class="text-center flex flex-col gap-4 dark:text-white text-gray-900 flex-1">
@@ -49,10 +48,10 @@ useHead({
             <h2 class="text-xl font-bold">
                 Familiar
             </h2>
-
+            DocsIt is planning to improve the documentation experience for developers, by providing a familiar experience
+            for them.
             <p>
-                The developer experience does matter, Flutter Bond is designed to be as familiar as possible to developers
-                coming from other frameworks especially Laravel.
+
             </p>
         </div>
 
