@@ -5,6 +5,8 @@
 </br>
 Building a documentation website has never been easier!
 
+[Docs](https://docsit.netlify.app/)
+
 ## What is DocsIt?
 
 DocsIt is a tool or a template built on NuxtJS that helps you build a documentation website for your project. It is designed to be simple and easy to use. You can use it to build your own documentation website in minutes.
