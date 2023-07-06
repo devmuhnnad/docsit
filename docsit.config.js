@@ -27,6 +27,7 @@ const config = {
         },
       ],
     },
+    
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Flutter Bond.`,
     },

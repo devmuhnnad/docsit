@@ -33,7 +33,7 @@ watchEffect(() => {
 </script>
 
 <template>
-    <header class="text-gray-600 body-font">
+    <header class="text-gray-600 body-font fixed dark:bg-gray-900 bg-white w-full top-0 z-10">
         <div class="w-full flex flex-wrap p-5 flex-row items-center gap-5">
 
             <div class="md:hidden">
